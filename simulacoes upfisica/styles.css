@@ -1,0 +1,174 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Nicer font */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f7f6; /* Light background color */
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #2c3e50; /* Darker heading color */
+    margin-bottom: 20px;
+}
+
+canvas {
+    border: 1px solid #bdc3c7; /* Softer border color */
+    margin: 20px;
+    background-color: #ecf0f1; /* Light background for canvas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    display: block; /* Prevents extra space below canvas */
+}
+
+.controls {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #ffffff; /* White background for controls */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    width: 80%; /* Control width */
+    max-width: 600px; /* Max width */
+    text-align: center;
+}
+
+.controls label {
+    display: block; /* Labels on separate lines */
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #34495e;
+}
+
+.controls span {
+    font-weight: normal;
+    color: #e74c3c; /* Highlight value color */
+    display: inline-block;
+    min-width: 30px; /* Ensure space for value */
+}
+
+.controls input[type="range"] {
+    width: 80%; /* Make sliders wider */
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.controls button {
+    background-color: #3498db; /* Blue button */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.controls button:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+}
+
+.info {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #e8f6fd; /* Light blue info box */
+    border: 1px solid #aed6f1; /* Blue border */
+    border-radius: 8px;
+    width: 80%;
+    max-width: 600px;
+    font-size: 0.95em;
+    line-height: 1.6;
+    color: #1a5276; /* Dark blue text */
+}
+
+/* Style range inputs for better cross-browser appearance (optional but recommended) */
+input[type=range] {
+  height: 25px;
+  -webkit-appearance: none;
+  margin: 10px 0;
+  width: 80%;
+  background: transparent; /* Remove default background */
+}
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 5px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 0px 0px 0px #000000;
+  background: #bdc3c7; /* Track color */
+  border-radius: 5px;
+  border: 0px solid #000000;
+}
+input[type=range]::-webkit-slider-thumb {
+  box-shadow: 0px 0px 1px #000000;
+  border: 1px solid #2c3e50;
+  height: 18px;
+  width: 18px;
+  border-radius: 50%; /* Circular thumb */
+  background: #3498db; /* Thumb color */
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -7px; /* Center thumb vertically */
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #a8b0b4; /* Slightly darker track on focus */
+}
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 5px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 0px 0px 0px #000000;
+  background: #bdc3c7;
+  border-radius: 5px;
+  border: 0px solid #000000;
+}
+input[type=range]::-moz-range-thumb {
+  box-shadow: 0px 0px 1px #000000;
+  border: 1px solid #2c3e50;
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  background: #3498db;
+  cursor: pointer;
+}
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 5px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+  background: #bdc3c7;
+  border: 0px solid #000000;
+  border-radius: 10px;
+  box-shadow: 0px 0px 0px #000000;
+}
+input[type=range]::-ms-fill-upper {
+  background: #bdc3c7;
+  border: 0px solid #000000;
+  border-radius: 10px;
+  box-shadow: 0px 0px 0px #000000;
+}
+input[type=range]::-ms-thumb {
+  margin-top: 1px;
+  box-shadow: 0px 0px 1px #000000;
+  border: 1px solid #2c3e50;
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  background: #3498db;
+  cursor: pointer;
+}
+input[type=range]:focus::-ms-fill-lower {
+  background: #a8b0b4;
+}
+input[type=range]:focus::-ms-fill-upper {
+  background: #a8b0b4;
+}

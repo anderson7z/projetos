@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simulação de Lançamento Oblíquo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Simulação de Lançamento Oblíquo</h1>
+    <div class="controls">
+        <label>Velocidade Inicial (m/s): <span id="velocityValue">50</span></label><br>
+        <input type="range" id="velocity" min="0" max="100" value="50"><br>
+        <label>Ângulo (graus): <span id="angleValue">45</span></label><br>
+        <input type="range" id="angle" min="0" max="90" value="45"><br>
+        <button onclick="fire()">Atirar!</button>
+    </div>
+    <canvas id="canvas" width="800" height="400"></canvas>
+    <div class="info" id="info"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
